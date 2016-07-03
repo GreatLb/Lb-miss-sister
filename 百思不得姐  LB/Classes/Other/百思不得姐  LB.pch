@@ -1,0 +1,26 @@
+//
+//  百思不得姐  LB.pch
+//  百思不得姐  LB
+//
+//  Created by xmg on 16/7/3.
+//  Copyright © 2016年 LONGBO. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import  "UIImage+Image.h"
+#import  "UIView+Frame.h"
+#define LBFunc LBLog(@"%s",__func__)
+#import "UIBarButtonItem+Item.h"
+#ifdef DEBUG
+
+#define LBLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define LBGLog(...)
+
+#endif
+
+#endif
+
+
