@@ -7,7 +7,7 @@
 //
 
 #import "LBMeViewController.h"
-
+#import "LBSettingViewController.h"
 @implementation LBMeViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
@@ -26,7 +26,9 @@
 
 //设置按钮点击
 -(void)settingClick{
-    NSLog(@"点击了我的右侧设置按钮");
+    LBSettingViewController  *settingVC = [[LBSettingViewController  alloc]init];
+    settingVC.hidesBottomBarWhenPushed =YES;
+    [self.navigationController  pushViewController:settingVC animated:YES];
 }
 //夜间模式按钮点击
 -(void)nightBtnClick:(UIButton *)btn{

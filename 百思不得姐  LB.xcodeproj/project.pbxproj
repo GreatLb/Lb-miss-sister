@@ -11,6 +11,7 @@
 		8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49FA1D27C90E004DC713 /* AppDelegate.m */; };
 		8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E4A021D27C90E004DC713 /* Assets.xcassets */; };
 		8E3E4A061D27C90E004DC713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E4A041D27C90E004DC713 /* LaunchScreen.storyboard */; };
+		8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8250041D2BCE1D00C3422E /* LBSettingViewController.m */; };
 		8E8664631D28A37500E45ED3 /* LBEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664621D28A37500E45ED3 /* LBEssenceViewController.m */; };
 		8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664651D28A3C900E45ED3 /* LBFriendTrendViewController.m */; };
 		8E86646C1D28A55600E45ED3 /* LBNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E86646B1D28A55600E45ED3 /* LBNewViewController.m */; };
@@ -20,6 +21,7 @@
 		8E8664841D290F6B00E45ED3 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664831D290F6B00E45ED3 /* UIView+Frame.m */; };
 		8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664861D290F7F00E45ED3 /* UIImage+Image.m */; };
 		8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664891D2915C600E45ED3 /* UIBarButtonItem+Item.m */; };
+		8E86648D1D2BC17800E45ED3 /* LBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E86648C1D2BC17800E45ED3 /* LBNavigationController.m */; };
 		DDD4B6825BD5E06C684CBB7F /* libPods-百思不得姐  LB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		8E3E4A021D27C90E004DC713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3E4A051D27C90E004DC713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E3E4A071D27C90E004DC713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8250031D2BCE1D00C3422E /* LBSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSettingViewController.h; sourceTree = "<group>"; };
+		8E8250041D2BCE1D00C3422E /* LBSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSettingViewController.m; sourceTree = "<group>"; };
 		8E8664611D28A37500E45ED3 /* LBEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBEssenceViewController.h; sourceTree = "<group>"; };
 		8E8664621D28A37500E45ED3 /* LBEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBEssenceViewController.m; sourceTree = "<group>"; };
 		8E8664641D28A3C900E45ED3 /* LBFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFriendTrendViewController.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		8E8664861D290F7F00E45ED3 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		8E8664881D2915C600E45ED3 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
 		8E8664891D2915C600E45ED3 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		8E86648B1D2BC17800E45ED3 /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
+		8E86648C1D2BC17800E45ED3 /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
 		C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐  LB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AA9CD5B2CE25E74AB9B81 /* Pods-百思不得姐  LB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐  LB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐  LB/Pods-百思不得姐  LB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,9 +119,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E824FFF1D2BCDCF00C3422E /* LBSetting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				8E8250001D2BCDCF00C3422E /* Controller */,
+				8E8250011D2BCDCF00C3422E /* Model */,
+				8E8250021D2BCDCF00C3422E /* View */,
+			);
+			path = "LBSetting(设置)";
+			sourceTree = "<group>";
+		};
+		8E8250001D2BCDCF00C3422E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8250031D2BCE1D00C3422E /* LBSettingViewController.h */,
+				8E8250041D2BCE1D00C3422E /* LBSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E8250011D2BCDCF00C3422E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E8250021D2BCDCF00C3422E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8E8664431D28A0DF00E45ED3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8E824FFF1D2BCDCF00C3422E /* LBSetting(设置) */,
 				8E8664501D28A0DF00E45ED3 /* Main */,
 				8E8664441D28A0DF00E45ED3 /* Essence(精华) */,
 				8E86644C1D28A0DF00E45ED3 /* FriendTrend(关注) */,
@@ -207,6 +247,8 @@
 			children = (
 				8E8664731D28A67D00E45ED3 /* LBTabBarController.h */,
 				8E8664741D28A67D00E45ED3 /* LBTabBarController.m */,
+				8E86648B1D2BC17800E45ED3 /* LBNavigationController.h */,
+				8E86648C1D2BC17800E45ED3 /* LBNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -480,10 +522,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8664631D28A37500E45ED3 /* LBEssenceViewController.m in Sources */,
+				8E86648D1D2BC17800E45ED3 /* LBNavigationController.m in Sources */,
 				8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */,
 				8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */,
 				8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */,
 				8E86646F1D28A59600E45ED3 /* LbPublishViewController.m in Sources */,
+				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
 				8E3E49F81D27C90E004DC713 /* main.m in Sources */,
 				8E8664751D28A67D00E45ED3 /* LBTabBarController.m in Sources */,
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,
@@ -595,6 +639,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐  LB/Classes/Other/百思不得姐  LB.pch";
 				INFOPLIST_FILE = "百思不得姐  LB/Info.plist";
@@ -610,6 +656,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_ENABLE_BUILTIN_FUNCTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐  LB/Classes/Other/百思不得姐  LB.pch";
 				INFOPLIST_FILE = "百思不得姐  LB/Info.plist";

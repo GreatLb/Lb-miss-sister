@@ -12,9 +12,9 @@
 #import "LBEssenceViewController.h"
 #import "LbPublishViewController.h"
 #import "LBFriendTrendViewController.h"
-
+#import "LBNavigationController.h"
 //#import "UIImage+Image.h"
-
+#import <MJExtension.h>
 @interface LBTabBarController ()
 @property(nonatomic, weak)UIButton *plusButton;
 @end
@@ -45,11 +45,6 @@
     NSMutableDictionary *fonDict = [NSMutableDictionary  dictionary];
     fonDict [NSFontAttributeName] =[UIFont systemFontOfSize:15];
 
-    //    NSDictionary *fonDict = @{
-//                                    NSFontAttributeName : [UIFont systemFontOfSize:20],
-//                                    NSFontAttributeName : [UIFont boldSystemFontOfSize:100
-//                                                           ]
-//                                    };
     [item setTitleTextAttributes:fonDict forState:UIControlStateNormal];
 }
 -(void)viewDidLoad{
@@ -93,12 +88,12 @@
 -(void)setupAllChildViewController{
     //精华
     LBEssenceViewController *essenceVc =[[LBEssenceViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:essenceVc];
+    LBNavigationController *nav = [[LBNavigationController alloc]initWithRootViewController:essenceVc];
     [self addChildViewController:nav];
     
     //创建新帖
     LBNewViewController *newVc =[[LBNewViewController alloc]init];
-    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:newVc];
+    LBNavigationController *nav1 = [[LBNavigationController alloc]initWithRootViewController:newVc];
     [self addChildViewController:nav1];
     
     //发布
@@ -108,12 +103,12 @@
     
     //关注
     LBFriendTrendViewController *friendTrendVc =[[LBFriendTrendViewController alloc]init];
-    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:friendTrendVc];
+    LBNavigationController *nav3 = [[LBNavigationController alloc]initWithRootViewController:friendTrendVc];
     [self addChildViewController:nav3];
     
     //我
     LBMeViewController *meVc =[[LBMeViewController alloc]init];
-    UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:meVc];
+    LBNavigationController *nav4 = [[LBNavigationController alloc]initWithRootViewController:meVc];
     [self addChildViewController:nav4];
     
 }
