@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F76FC1D2BE67200B0A494 /* LBADViewController.m */; };
+		8E0F76FF1D2BE67200B0A494 /* LBADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F76FD1D2BE67200B0A494 /* LBADViewController.xib */; };
+		8E0F77081D2BEB4A00B0A494 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77011D2BEB4A00B0A494 /* LaunchImage-568h@2x.png */; };
+		8E0F77091D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77021D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png */; };
+		8E0F770A1D2BEB4A00B0A494 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77031D2BEB4A00B0A494 /* LaunchImage-700@2x.png */; };
+		8E0F770B1D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77041D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png */; };
+		8E0F770C1D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77051D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77061D2BEB4A00B0A494 /* LaunchImage.png */; };
+		8E0F770E1D2BEB4A00B0A494 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77071D2BEB4A00B0A494 /* LaunchImage@2x.png */; };
+		8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F77101D2D3ABB00B0A494 /* LBADItem.m */; };
 		8E3E49F81D27C90E004DC713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49F71D27C90E004DC713 /* main.m */; };
 		8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49FA1D27C90E004DC713 /* AppDelegate.m */; };
 		8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E4A021D27C90E004DC713 /* Assets.xcassets */; };
@@ -27,6 +37,18 @@
 
 /* Begin PBXFileReference section */
 		4A05338D61DE4A30B60EB618 /* Pods-百思不得姐  LB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐  LB.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐  LB/Pods-百思不得姐  LB.release.xcconfig"; sourceTree = "<group>"; };
+		8E0F76FB1D2BE67200B0A494 /* LBADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBADViewController.h; sourceTree = "<group>"; };
+		8E0F76FC1D2BE67200B0A494 /* LBADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBADViewController.m; sourceTree = "<group>"; };
+		8E0F76FD1D2BE67200B0A494 /* LBADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBADViewController.xib; sourceTree = "<group>"; };
+		8E0F77011D2BEB4A00B0A494 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		8E0F77021D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		8E0F77031D2BEB4A00B0A494 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		8E0F77041D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		8E0F77051D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		8E0F77061D2BEB4A00B0A494 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		8E0F77071D2BEB4A00B0A494 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		8E0F770F1D2D3ABB00B0A494 /* LBADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBADItem.h; sourceTree = "<group>"; };
+		8E0F77101D2D3ABB00B0A494 /* LBADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBADItem.m; sourceTree = "<group>"; };
 		8E3E49F31D27C90E004DC713 /* 百思不得姐  LB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐  LB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E49F71D27C90E004DC713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		8E3E49F91D27C90E004DC713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +103,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E0F76F71D2BE64300B0A494 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F76F81D2BE64300B0A494 /* Controller */,
+				8E0F76F91D2BE64300B0A494 /* Model */,
+				8E0F76FA1D2BE64300B0A494 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		8E0F76F81D2BE64300B0A494 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F76FB1D2BE67200B0A494 /* LBADViewController.h */,
+				8E0F76FC1D2BE67200B0A494 /* LBADViewController.m */,
+				8E0F76FD1D2BE67200B0A494 /* LBADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0F76F91D2BE64300B0A494 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F770F1D2D3ABB00B0A494 /* LBADItem.h */,
+				8E0F77101D2D3ABB00B0A494 /* LBADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0F76FA1D2BE64300B0A494 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0F77001D2BEB4A00B0A494 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				8E0F77011D2BEB4A00B0A494 /* LaunchImage-568h@2x.png */,
+				8E0F77021D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png */,
+				8E0F77031D2BEB4A00B0A494 /* LaunchImage-700@2x.png */,
+				8E0F77041D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png */,
+				8E0F77051D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png */,
+				8E0F77061D2BEB4A00B0A494 /* LaunchImage.png */,
+				8E0F77071D2BEB4A00B0A494 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
 		8E3E49EA1D27C90E004DC713 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +187,7 @@
 		8E3E49F61D27C90E004DC713 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F77001D2BEB4A00B0A494 /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +228,7 @@
 		8E8664431D28A0DF00E45ED3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F76F71D2BE64300B0A494 /* AD(广告) */,
 				8E824FFF1D2BCDCF00C3422E /* LBSetting(设置) */,
 				8E8664501D28A0DF00E45ED3 /* Main */,
 				8E8664441D28A0DF00E45ED3 /* Essence(精华) */,
@@ -461,8 +535,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0F76FF1D2BE67200B0A494 /* LBADViewController.xib in Resources */,
+				8E0F77091D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png in Resources */,
+				8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */,
 				8E3E4A061D27C90E004DC713 /* LaunchScreen.storyboard in Resources */,
+				8E0F770A1D2BEB4A00B0A494 /* LaunchImage-700@2x.png in Resources */,
+				8E0F770C1D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				8E0F77081D2BEB4A00B0A494 /* LaunchImage-568h@2x.png in Resources */,
+				8E0F770B1D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png in Resources */,
 				8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */,
+				8E0F770E1D2BEB4A00B0A494 /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,8 +608,10 @@
 				8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */,
 				8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */,
 				8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */,
+				8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */,
 				8E86646F1D28A59600E45ED3 /* LbPublishViewController.m in Sources */,
 				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
+				8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */,
 				8E3E49F81D27C90E004DC713 /* main.m in Sources */,
 				8E8664751D28A67D00E45ED3 /* LBTabBarController.m in Sources */,
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,

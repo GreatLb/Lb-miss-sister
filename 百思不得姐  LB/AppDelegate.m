@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LBTabBarController.h"
+#import "LBADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,10 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window  = [[UIWindow alloc]initWithFrame:[UIScreen  mainScreen].bounds];
-    //创建底部TabBar
-    LBTabBarController *tabBar = [[LBTabBarController alloc]init];
-    
-    self.window.rootViewController = tabBar;
+//    //创建底部TabBar
+//    LBTabBarController *tabBar = [[LBTabBarController alloc]init];
+    LBADViewController *adVC = [[LBADViewController alloc]init];
+//    
+    self.window.rootViewController = adVC;
     [self.window  makeKeyAndVisible];
     return YES;
 }
