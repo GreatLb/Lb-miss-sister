@@ -18,7 +18,8 @@
     dict[NSFontAttributeName] = [UIFont  boldSystemFontOfSize:22];
     UINavigationBar *bar = [UINavigationBar  appearanceWhenContainedIn:self, nil];
     [bar setTitleTextAttributes:dict];
-
+    // 设置背景图片
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -7,6 +7,7 @@
 //
 
 #import "LBNewViewController.h"
+#import "LBSubTableViewController.h"
 
 @implementation LBNewViewController
 -(void)viewDidLoad{
@@ -25,7 +26,9 @@
 }
 
 -(void)MainTagSubIconClick{
-    
+    LBSubTableViewController *subVC = [[LBSubTableViewController alloc]init];
+    //跳转到推荐标签控制器
+    [self.navigationController  pushViewController:subVC animated:YES];
 }
 
 @end

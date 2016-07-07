@@ -17,6 +17,10 @@
 		8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77061D2BEB4A00B0A494 /* LaunchImage.png */; };
 		8E0F770E1D2BEB4A00B0A494 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77071D2BEB4A00B0A494 /* LaunchImage@2x.png */; };
 		8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F77101D2D3ABB00B0A494 /* LBADItem.m */; };
+		8E0F77141D2DDB4D00B0A494 /* LBSubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F77131D2DDB4D00B0A494 /* LBSubTableViewController.m */; };
+		8E0F77181D2DE04000B0A494 /* LBSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F77161D2DE04000B0A494 /* LBSubTableViewCell.m */; };
+		8E0F77191D2DE04000B0A494 /* LBSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77171D2DE04000B0A494 /* LBSubTableViewCell.xib */; };
+		8E0F771C1D2DEC0600B0A494 /* LBSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F771B1D2DEC0600B0A494 /* LBSubTagItem.m */; };
 		8E3E49F81D27C90E004DC713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49F71D27C90E004DC713 /* main.m */; };
 		8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49FA1D27C90E004DC713 /* AppDelegate.m */; };
 		8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E4A021D27C90E004DC713 /* Assets.xcassets */; };
@@ -49,6 +53,13 @@
 		8E0F77071D2BEB4A00B0A494 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		8E0F770F1D2D3ABB00B0A494 /* LBADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBADItem.h; sourceTree = "<group>"; };
 		8E0F77101D2D3ABB00B0A494 /* LBADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBADItem.m; sourceTree = "<group>"; };
+		8E0F77121D2DDB4D00B0A494 /* LBSubTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSubTableViewController.h; sourceTree = "<group>"; };
+		8E0F77131D2DDB4D00B0A494 /* LBSubTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSubTableViewController.m; sourceTree = "<group>"; };
+		8E0F77151D2DE04000B0A494 /* LBSubTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSubTableViewCell.h; sourceTree = "<group>"; };
+		8E0F77161D2DE04000B0A494 /* LBSubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSubTableViewCell.m; sourceTree = "<group>"; };
+		8E0F77171D2DE04000B0A494 /* LBSubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBSubTableViewCell.xib; sourceTree = "<group>"; };
+		8E0F771A1D2DEC0600B0A494 /* LBSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSubTagItem.h; sourceTree = "<group>"; };
+		8E0F771B1D2DEC0600B0A494 /* LBSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSubTagItem.m; sourceTree = "<group>"; };
 		8E3E49F31D27C90E004DC713 /* 百思不得姐  LB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐  LB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E49F71D27C90E004DC713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		8E3E49F91D27C90E004DC713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -389,6 +400,8 @@
 			children = (
 				8E86646A1D28A55600E45ED3 /* LBNewViewController.h */,
 				8E86646B1D28A55600E45ED3 /* LBNewViewController.m */,
+				8E0F77121D2DDB4D00B0A494 /* LBSubTableViewController.h */,
+				8E0F77131D2DDB4D00B0A494 /* LBSubTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,6 +409,8 @@
 		8E86645A1D28A0DF00E45ED3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F771A1D2DEC0600B0A494 /* LBSubTagItem.h */,
+				8E0F771B1D2DEC0600B0A494 /* LBSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +418,9 @@
 		8E86645B1D28A0DF00E45ED3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E0F77151D2DE04000B0A494 /* LBSubTableViewCell.h */,
+				8E0F77161D2DE04000B0A494 /* LBSubTableViewCell.m */,
+				8E0F77171D2DE04000B0A494 /* LBSubTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -538,6 +556,7 @@
 				8E0F76FF1D2BE67200B0A494 /* LBADViewController.xib in Resources */,
 				8E0F77091D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png in Resources */,
 				8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */,
+				8E0F77191D2DE04000B0A494 /* LBSubTableViewCell.xib in Resources */,
 				8E3E4A061D27C90E004DC713 /* LaunchScreen.storyboard in Resources */,
 				8E0F770A1D2BEB4A00B0A494 /* LaunchImage-700@2x.png in Resources */,
 				8E0F770C1D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
@@ -607,9 +626,11 @@
 				8E86648D1D2BC17800E45ED3 /* LBNavigationController.m in Sources */,
 				8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */,
 				8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */,
+				8E0F77141D2DDB4D00B0A494 /* LBSubTableViewController.m in Sources */,
 				8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */,
 				8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */,
 				8E86646F1D28A59600E45ED3 /* LbPublishViewController.m in Sources */,
+				8E0F771C1D2DEC0600B0A494 /* LBSubTagItem.m in Sources */,
 				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
 				8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */,
 				8E3E49F81D27C90E004DC713 /* main.m in Sources */,
@@ -617,6 +638,7 @@
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,
 				8E8664721D28A60900E45ED3 /* LBMeViewController.m in Sources */,
 				8E8664841D290F6B00E45ED3 /* UIView+Frame.m in Sources */,
+				8E0F77181D2DE04000B0A494 /* LBSubTableViewCell.m in Sources */,
 				8E86646C1D28A55600E45ED3 /* LBNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
