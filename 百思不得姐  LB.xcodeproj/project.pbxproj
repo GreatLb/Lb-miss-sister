@@ -44,6 +44,8 @@
 		8EA30EC71D2E920C00CC5E94 /* LBFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30EC61D2E920C00CC5E94 /* LBFastLoginView.m */; };
 		8EA30EC91D2E922800CC5E94 /* LBFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */; };
 		8EA30ECC1D2E9A6300CC5E94 /* LBFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */; };
+		8EA30ECF1D2F7B8100CC5E94 /* LBLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30ECE1D2F7B8100CC5E94 /* LBLoginTextField.m */; };
+		8EE5BF8C1D2FBD0800C40DC1 /* UITextField+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5BF8B1D2FBD0800C40DC1 /* UITextField+placeholder.m */; };
 		DDD4B6825BD5E06C684CBB7F /* libPods-百思不得姐  LB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +112,10 @@
 		8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBFastLoginView.xib; sourceTree = "<group>"; };
 		8EA30ECA1D2E9A6300CC5E94 /* LBFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFastLoginButton.h; sourceTree = "<group>"; };
 		8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBFastLoginButton.m; sourceTree = "<group>"; };
+		8EA30ECD1D2F7B8000CC5E94 /* LBLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLoginTextField.h; sourceTree = "<group>"; };
+		8EA30ECE1D2F7B8100CC5E94 /* LBLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLoginTextField.m; sourceTree = "<group>"; };
+		8EE5BF8A1D2FBD0800C40DC1 /* UITextField+placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeholder.h"; sourceTree = "<group>"; };
+		8EE5BF8B1D2FBD0800C40DC1 /* UITextField+placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeholder.m"; sourceTree = "<group>"; };
 		C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐  LB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AA9CD5B2CE25E74AB9B81 /* Pods-百思不得姐  LB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐  LB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐  LB/Pods-百思不得姐  LB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,6 +351,8 @@
 				8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */,
 				8EA30ECA1D2E9A6300CC5E94 /* LBFastLoginButton.h */,
 				8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */,
+				8EA30ECD1D2F7B8000CC5E94 /* LBLoginTextField.h */,
+				8EA30ECE1D2F7B8100CC5E94 /* LBLoginTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +520,8 @@
 				8E8664831D290F6B00E45ED3 /* UIView+Frame.m */,
 				8E8664881D2915C600E45ED3 /* UIBarButtonItem+Item.h */,
 				8E8664891D2915C600E45ED3 /* UIBarButtonItem+Item.m */,
+				8EE5BF8A1D2FBD0800C40DC1 /* UITextField+placeholder.h */,
+				8EE5BF8B1D2FBD0800C40DC1 /* UITextField+placeholder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -666,6 +676,7 @@
 				8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */,
 				8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */,
 				8E86646F1D28A59600E45ED3 /* LbPublishViewController.m in Sources */,
+				8EA30ECF1D2F7B8100CC5E94 /* LBLoginTextField.m in Sources */,
 				8E0F771C1D2DEC0600B0A494 /* LBSubTagItem.m in Sources */,
 				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
 				8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */,
@@ -674,6 +685,7 @@
 				8E8664751D28A67D00E45ED3 /* LBTabBarController.m in Sources */,
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,
 				8EA30ECC1D2E9A6300CC5E94 /* LBFastLoginButton.m in Sources */,
+				8EE5BF8C1D2FBD0800C40DC1 /* UITextField+placeholder.m in Sources */,
 				8EA30EC41D2E6E5600CC5E94 /* LBLoginRegisterView.m in Sources */,
 				8E8664721D28A60900E45ED3 /* LBMeViewController.m in Sources */,
 				8EA30EC71D2E920C00CC5E94 /* LBFastLoginView.m in Sources */,
