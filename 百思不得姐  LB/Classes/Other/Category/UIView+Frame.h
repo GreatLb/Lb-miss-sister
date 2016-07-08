@@ -13,6 +13,8 @@
 
 @property CGFloat lb_x;
 @property CGFloat lb_y;
+@property CGFloat lb_centerX;
+@property CGFloat lb_centerY;
 @property CGFloat lb_width;
 @property CGFloat lb_height;
 

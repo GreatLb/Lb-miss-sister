@@ -36,6 +36,14 @@
 		8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664861D290F7F00E45ED3 /* UIImage+Image.m */; };
 		8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8664891D2915C600E45ED3 /* UIBarButtonItem+Item.m */; };
 		8E86648D1D2BC17800E45ED3 /* LBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E86648C1D2BC17800E45ED3 /* LBNavigationController.m */; };
+		8EA30EB91D2E4C1100CC5E94 /* LBLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30EB71D2E4C1100CC5E94 /* LBLoginRegisterViewController.m */; };
+		8EA30EBA1D2E4C1100CC5E94 /* LBLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA30EB81D2E4C1100CC5E94 /* LBLoginRegisterViewController.xib */; };
+		8EA30EBC1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA30EBB1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib */; };
+		8EA30EC11D2E6E3700CC5E94 /* LBLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA30EC01D2E6E3700CC5E94 /* LBLoginRegisterView.xib */; };
+		8EA30EC41D2E6E5600CC5E94 /* LBLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30EC31D2E6E5600CC5E94 /* LBLoginRegisterView.m */; };
+		8EA30EC71D2E920C00CC5E94 /* LBFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30EC61D2E920C00CC5E94 /* LBFastLoginView.m */; };
+		8EA30EC91D2E922800CC5E94 /* LBFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */; };
+		8EA30ECC1D2E9A6300CC5E94 /* LBFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */; };
 		DDD4B6825BD5E06C684CBB7F /* libPods-百思不得姐  LB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +98,18 @@
 		8E8664891D2915C600E45ED3 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		8E86648B1D2BC17800E45ED3 /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
 		8E86648C1D2BC17800E45ED3 /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
+		8EA30EB61D2E4C1100CC5E94 /* LBLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLoginRegisterViewController.h; sourceTree = "<group>"; };
+		8EA30EB71D2E4C1100CC5E94 /* LBLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLoginRegisterViewController.m; sourceTree = "<group>"; };
+		8EA30EB81D2E4C1100CC5E94 /* LBLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		8EA30EBB1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBFriendTrendViewController.xib; sourceTree = "<group>"; };
+		8EA30EC01D2E6E3700CC5E94 /* LBLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBLoginRegisterView.xib; sourceTree = "<group>"; };
+		8EA30EC21D2E6E5600CC5E94 /* LBLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLoginRegisterView.h; sourceTree = "<group>"; };
+		8EA30EC31D2E6E5600CC5E94 /* LBLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLoginRegisterView.m; sourceTree = "<group>"; };
+		8EA30EC51D2E920C00CC5E94 /* LBFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFastLoginView.h; sourceTree = "<group>"; };
+		8EA30EC61D2E920C00CC5E94 /* LBFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBFastLoginView.m; sourceTree = "<group>"; };
+		8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBFastLoginView.xib; sourceTree = "<group>"; };
+		8EA30ECA1D2E9A6300CC5E94 /* LBFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFastLoginButton.h; sourceTree = "<group>"; };
+		8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBFastLoginButton.m; sourceTree = "<group>"; };
 		C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐  LB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89AA9CD5B2CE25E74AB9B81 /* Pods-百思不得姐  LB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐  LB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐  LB/Pods-百思不得姐  LB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -299,6 +319,10 @@
 			children = (
 				8E8664641D28A3C900E45ED3 /* LBFriendTrendViewController.h */,
 				8E8664651D28A3C900E45ED3 /* LBFriendTrendViewController.m */,
+				8EA30EBB1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib */,
+				8EA30EB61D2E4C1100CC5E94 /* LBLoginRegisterViewController.h */,
+				8EA30EB71D2E4C1100CC5E94 /* LBLoginRegisterViewController.m */,
+				8EA30EB81D2E4C1100CC5E94 /* LBLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +337,14 @@
 		8E86644F1D28A0DF00E45ED3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EA30EC21D2E6E5600CC5E94 /* LBLoginRegisterView.h */,
+				8EA30EC31D2E6E5600CC5E94 /* LBLoginRegisterView.m */,
+				8EA30EC01D2E6E3700CC5E94 /* LBLoginRegisterView.xib */,
+				8EA30EC51D2E920C00CC5E94 /* LBFastLoginView.h */,
+				8EA30EC61D2E920C00CC5E94 /* LBFastLoginView.m */,
+				8EA30EC81D2E922800CC5E94 /* LBFastLoginView.xib */,
+				8EA30ECA1D2E9A6300CC5E94 /* LBFastLoginButton.h */,
+				8EA30ECB1D2E9A6300CC5E94 /* LBFastLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,13 +589,17 @@
 				8E0F77091D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png in Resources */,
 				8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */,
 				8E0F77191D2DE04000B0A494 /* LBSubTableViewCell.xib in Resources */,
+				8EA30EBC1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib in Resources */,
 				8E3E4A061D27C90E004DC713 /* LaunchScreen.storyboard in Resources */,
 				8E0F770A1D2BEB4A00B0A494 /* LaunchImage-700@2x.png in Resources */,
+				8EA30EC11D2E6E3700CC5E94 /* LBLoginRegisterView.xib in Resources */,
 				8E0F770C1D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8E0F77081D2BEB4A00B0A494 /* LaunchImage-568h@2x.png in Resources */,
 				8E0F770B1D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png in Resources */,
+				8EA30EC91D2E922800CC5E94 /* LBFastLoginView.xib in Resources */,
 				8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */,
 				8E0F770E1D2BEB4A00B0A494 /* LaunchImage@2x.png in Resources */,
+				8EA30EBA1D2E4C1100CC5E94 /* LBLoginRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,9 +670,13 @@
 				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
 				8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */,
 				8E3E49F81D27C90E004DC713 /* main.m in Sources */,
+				8EA30EB91D2E4C1100CC5E94 /* LBLoginRegisterViewController.m in Sources */,
 				8E8664751D28A67D00E45ED3 /* LBTabBarController.m in Sources */,
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,
+				8EA30ECC1D2E9A6300CC5E94 /* LBFastLoginButton.m in Sources */,
+				8EA30EC41D2E6E5600CC5E94 /* LBLoginRegisterView.m in Sources */,
 				8E8664721D28A60900E45ED3 /* LBMeViewController.m in Sources */,
+				8EA30EC71D2E920C00CC5E94 /* LBFastLoginView.m in Sources */,
 				8E8664841D290F6B00E45ED3 /* UIView+Frame.m in Sources */,
 				8E0F77181D2DE04000B0A494 /* LBSubTableViewCell.m in Sources */,
 				8E86646C1D28A55600E45ED3 /* LBNewViewController.m in Sources */,

@@ -56,5 +56,24 @@
     frame.size.height = lb_height;
     self.frame = frame;
 }
+-(CGFloat)lb_centerX{
+    return self.center.x;
+    
+}
+-(void)setLb_centerX:(CGFloat)lb_centerX{
+    CGPoint center = self.center;
+    center.x = lb_centerX;
+    self.center = center;
+}
 
+-(CGFloat)lb_centerY{
+    return self.center.y;
+}
+
+-(void)setLb_centerY:(CGFloat)lb_centerY{
+    CGPoint center =self.center;
+    center.y = lb_centerY;
+    self.center = center;
+
+}
 @end

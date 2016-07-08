@@ -7,11 +7,12 @@
 //
 
 #import "LBFriendTrendViewController.h"
+#import "LBLoginRegisterViewController.h"
 
 @implementation LBFriendTrendViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor blackColor];
+    self.view.backgroundColor =[UIColor grayColor];
     [self setupNavigationBar];
 }
 -(void)setupNavigationBar{ 
@@ -20,5 +21,13 @@
     }
 -(void)RecommentClick{
     NSLog(@"点击了关注左侧按钮");
+}
+- (IBAction)LoginRegisterBtnClick:(UIButton *)sender {
+    
+    LBLoginRegisterViewController *LoginRegisterVC = [[LBLoginRegisterViewController alloc]init];
+    
+    //moda  效果
+    [self presentViewController:LoginRegisterVC animated:YES completion:nil];
+    
 }
 @end
