@@ -56,6 +56,8 @@
     [containView addSubview:backBtn];
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:containView];
     viewController.navigationItem.leftBarButtonItem =item;
+    viewController.hidesBottomBarWhenPushed = YES;
+        
     }
     //跳转控制器
     [super pushViewController:viewController animated:animated ];

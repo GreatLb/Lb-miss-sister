@@ -107,8 +107,8 @@
     [self addChildViewController:nav3];
     
     //我
-    LBMeViewController *meVc =[[LBMeViewController alloc]init];
-    LBNavigationController *nav4 = [[LBNavigationController alloc]initWithRootViewController:meVc];
+    UIStoryboard *strodboard =[UIStoryboard  storyboardWithName:@"LBMeViewController" bundle:nil];
+    LBMeViewController *meVc =[strodboard instantiateInitialViewController];  LBNavigationController *nav4 = [[LBNavigationController alloc]initWithRootViewController:meVc];
     [self addChildViewController:nav4];
     
 }
