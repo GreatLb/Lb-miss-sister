@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0A6A261D35129B00EB7013 /* LbBaseMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6A251D35129B00EB7013 /* LbBaseMenuViewController.m */; };
+		8E0A6A291D3519DE00EB7013 /* LBThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6A281D3519DE00EB7013 /* LBThemeCell.m */; };
+		8E0A6A2F1D351FD600EB7013 /* LBThemeTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A6A2E1D351FD600EB7013 /* LBThemeTopView.xib */; };
+		8E0A6A321D35278F00EB7013 /* LBThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6A311D35278F00EB7013 /* LBThemeItem.m */; };
+		8E0A6A361D365BEC00EB7013 /* LBThemeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6A351D365BEC00EB7013 /* LBThemeViewModel.m */; };
+		8E0A6A3B1D36730400EB7013 /* LBThemePictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0A6A3A1D36730400EB7013 /* LBThemePictureView.xib */; };
+		8E0A6A3E1D36776100EB7013 /* LBThemePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A6A3D1D36776100EB7013 /* LBThemePictureView.m */; };
 		8E0CF9621D3113D1004AF092 /* LBMeSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CF9611D3113D1004AF092 /* LBMeSquareItem.m */; };
 		8E0CF9661D312A7E004AF092 /* LBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CF9641D312A7E004AF092 /* LBWebViewController.m */; };
 		8E0CF9671D312A7E004AF092 /* LBWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CF9651D312A7E004AF092 /* LBWebViewController.xib */; };
@@ -30,6 +37,16 @@
 		8E0F77181D2DE04000B0A494 /* LBSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F77161D2DE04000B0A494 /* LBSubTableViewCell.m */; };
 		8E0F77191D2DE04000B0A494 /* LBSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0F77171D2DE04000B0A494 /* LBSubTableViewCell.xib */; };
 		8E0F771C1D2DEC0600B0A494 /* LBSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F771B1D2DEC0600B0A494 /* LBSubTagItem.m */; };
+		8E3A33DA1D3780CF00A86585 /* LBThemeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33D91D3780CF00A86585 /* LBThemeTopView.m */; };
+		8E3A33DD1D3781D200A86585 /* LBBaseThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33DC1D3781D200A86585 /* LBBaseThemeView.m */; };
+		8E3A33E01D37845C00A86585 /* LBThemeVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33DF1D37845C00A86585 /* LBThemeVoiceView.m */; };
+		8E3A33E21D37847300A86585 /* LBThemeVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3A33E11D37847300A86585 /* LBThemeVoiceView.xib */; };
+		8E3A33E51D37969C00A86585 /* LBthemeVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33E41D37969C00A86585 /* LBthemeVideoView.m */; };
+		8E3A33E71D3796C100A86585 /* LBthemeVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3A33E61D3796C100A86585 /* LBthemeVideoView.xib */; };
+		8E3A33EA1D37A53700A86585 /* LBHotCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33E91D37A53700A86585 /* LBHotCommentView.m */; };
+		8E3A33EC1D37A54C00A86585 /* LBHotCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3A33EB1D37A54C00A86585 /* LBHotCommentView.xib */; };
+		8E3A33EF1D37C1FC00A86585 /* LBCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33EE1D37C1FC00A86585 /* LBCommentItem.m */; };
+		8E3A33F21D37C3FC00A86585 /* LBUserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33F11D37C3FC00A86585 /* LBUserItem.m */; };
 		8E3E49F81D27C90E004DC713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49F71D27C90E004DC713 /* main.m */; };
 		8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E49FA1D27C90E004DC713 /* AppDelegate.m */; };
 		8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E4A021D27C90E004DC713 /* Assets.xcassets */; };
@@ -63,6 +80,19 @@
 
 /* Begin PBXFileReference section */
 		4A05338D61DE4A30B60EB618 /* Pods-百思不得姐  LB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐  LB.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐  LB/Pods-百思不得姐  LB.release.xcconfig"; sourceTree = "<group>"; };
+		8E0A6A241D35129B00EB7013 /* LbBaseMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LbBaseMenuViewController.h; sourceTree = "<group>"; };
+		8E0A6A251D35129B00EB7013 /* LbBaseMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LbBaseMenuViewController.m; sourceTree = "<group>"; };
+		8E0A6A271D3519DE00EB7013 /* LBThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemeCell.h; sourceTree = "<group>"; };
+		8E0A6A281D3519DE00EB7013 /* LBThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeCell.m; sourceTree = "<group>"; };
+		8E0A6A2B1D351D7800EB7013 /* LBThemeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemeTopView.h; sourceTree = "<group>"; };
+		8E0A6A2E1D351FD600EB7013 /* LBThemeTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBThemeTopView.xib; sourceTree = "<group>"; };
+		8E0A6A301D35278F00EB7013 /* LBThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemeItem.h; sourceTree = "<group>"; };
+		8E0A6A311D35278F00EB7013 /* LBThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeItem.m; sourceTree = "<group>"; };
+		8E0A6A341D365BEC00EB7013 /* LBThemeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemeViewModel.h; sourceTree = "<group>"; };
+		8E0A6A351D365BEC00EB7013 /* LBThemeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeViewModel.m; sourceTree = "<group>"; };
+		8E0A6A3A1D36730400EB7013 /* LBThemePictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBThemePictureView.xib; sourceTree = "<group>"; };
+		8E0A6A3C1D36776100EB7013 /* LBThemePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemePictureView.h; sourceTree = "<group>"; };
+		8E0A6A3D1D36776100EB7013 /* LBThemePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemePictureView.m; sourceTree = "<group>"; };
 		8E0CF9601D3113D1004AF092 /* LBMeSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBMeSquareItem.h; sourceTree = "<group>"; };
 		8E0CF9611D3113D1004AF092 /* LBMeSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBMeSquareItem.m; sourceTree = "<group>"; };
 		8E0CF9631D312A7E004AF092 /* LBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBWebViewController.h; sourceTree = "<group>"; };
@@ -99,6 +129,22 @@
 		8E0F77171D2DE04000B0A494 /* LBSubTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBSubTableViewCell.xib; sourceTree = "<group>"; };
 		8E0F771A1D2DEC0600B0A494 /* LBSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSubTagItem.h; sourceTree = "<group>"; };
 		8E0F771B1D2DEC0600B0A494 /* LBSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSubTagItem.m; sourceTree = "<group>"; };
+		8E3A33D91D3780CF00A86585 /* LBThemeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeTopView.m; sourceTree = "<group>"; };
+		8E3A33DB1D3781D200A86585 /* LBBaseThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBaseThemeView.h; sourceTree = "<group>"; };
+		8E3A33DC1D3781D200A86585 /* LBBaseThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBaseThemeView.m; sourceTree = "<group>"; };
+		8E3A33DE1D37845C00A86585 /* LBThemeVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBThemeVoiceView.h; sourceTree = "<group>"; };
+		8E3A33DF1D37845C00A86585 /* LBThemeVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeVoiceView.m; sourceTree = "<group>"; };
+		8E3A33E11D37847300A86585 /* LBThemeVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBThemeVoiceView.xib; sourceTree = "<group>"; };
+		8E3A33E31D37969C00A86585 /* LBthemeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBthemeVideoView.h; sourceTree = "<group>"; };
+		8E3A33E41D37969C00A86585 /* LBthemeVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBthemeVideoView.m; sourceTree = "<group>"; };
+		8E3A33E61D3796C100A86585 /* LBthemeVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBthemeVideoView.xib; sourceTree = "<group>"; };
+		8E3A33E81D37A53700A86585 /* LBHotCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBHotCommentView.h; sourceTree = "<group>"; };
+		8E3A33E91D37A53700A86585 /* LBHotCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBHotCommentView.m; sourceTree = "<group>"; };
+		8E3A33EB1D37A54C00A86585 /* LBHotCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBHotCommentView.xib; sourceTree = "<group>"; };
+		8E3A33ED1D37C1FC00A86585 /* LBCommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCommentItem.h; sourceTree = "<group>"; };
+		8E3A33EE1D37C1FC00A86585 /* LBCommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCommentItem.m; sourceTree = "<group>"; };
+		8E3A33F01D37C3FC00A86585 /* LBUserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUserItem.h; sourceTree = "<group>"; };
+		8E3A33F11D37C3FC00A86585 /* LBUserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUserItem.m; sourceTree = "<group>"; };
 		8E3E49F31D27C90E004DC713 /* 百思不得姐  LB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐  LB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E49F71D27C90E004DC713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		8E3E49F91D27C90E004DC713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +217,39 @@
 				C21D2CBCC4ADC46630CE6EB9 /* libPods-百思不得姐  LB.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E0A6A2A1D351D3A00EB7013 /* ChildView */ = {
+			isa = PBXGroup;
+			children = (
+				8E3A33DB1D3781D200A86585 /* LBBaseThemeView.h */,
+				8E3A33DC1D3781D200A86585 /* LBBaseThemeView.m */,
+				8E0A6A2B1D351D7800EB7013 /* LBThemeTopView.h */,
+				8E3A33D91D3780CF00A86585 /* LBThemeTopView.m */,
+				8E0A6A2E1D351FD600EB7013 /* LBThemeTopView.xib */,
+				8E0A6A3C1D36776100EB7013 /* LBThemePictureView.h */,
+				8E0A6A3D1D36776100EB7013 /* LBThemePictureView.m */,
+				8E0A6A3A1D36730400EB7013 /* LBThemePictureView.xib */,
+				8E3A33DE1D37845C00A86585 /* LBThemeVoiceView.h */,
+				8E3A33DF1D37845C00A86585 /* LBThemeVoiceView.m */,
+				8E3A33E11D37847300A86585 /* LBThemeVoiceView.xib */,
+				8E3A33E31D37969C00A86585 /* LBthemeVideoView.h */,
+				8E3A33E41D37969C00A86585 /* LBthemeVideoView.m */,
+				8E3A33E61D3796C100A86585 /* LBthemeVideoView.xib */,
+				8E3A33E81D37A53700A86585 /* LBHotCommentView.h */,
+				8E3A33E91D37A53700A86585 /* LBHotCommentView.m */,
+				8E3A33EB1D37A54C00A86585 /* LBHotCommentView.xib */,
+			);
+			path = ChildView;
+			sourceTree = "<group>";
+		};
+		8E0A6A331D365BCC00EB7013 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A6A341D365BEC00EB7013 /* LBThemeViewModel.h */,
+				8E0A6A351D365BEC00EB7013 /* LBThemeViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8E0CF9681D321044004AF092 /* Tool */ = {
@@ -348,6 +427,7 @@
 		8E8664441D28A0DF00E45ED3 /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				8E0A6A331D365BCC00EB7013 /* ViewModel */,
 				8E8664451D28A0DF00E45ED3 /* Controller */,
 				8E86644A1D28A0DF00E45ED3 /* Model */,
 				8E86644B1D28A0DF00E45ED3 /* View */,
@@ -361,6 +441,8 @@
 				8E0CF96D1D322FFD004AF092 /* ChildViewController */,
 				8E8664611D28A37500E45ED3 /* LBEssenceViewController.h */,
 				8E8664621D28A37500E45ED3 /* LBEssenceViewController.m */,
+				8E0A6A241D35129B00EB7013 /* LbBaseMenuViewController.h */,
+				8E0A6A251D35129B00EB7013 /* LbBaseMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +450,12 @@
 		8E86644A1D28A0DF00E45ED3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E0A6A301D35278F00EB7013 /* LBThemeItem.h */,
+				8E0A6A311D35278F00EB7013 /* LBThemeItem.m */,
+				8E3A33ED1D37C1FC00A86585 /* LBCommentItem.h */,
+				8E3A33EE1D37C1FC00A86585 /* LBCommentItem.m */,
+				8E3A33F01D37C3FC00A86585 /* LBUserItem.h */,
+				8E3A33F11D37C3FC00A86585 /* LBUserItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -375,6 +463,9 @@
 		8E86644B1D28A0DF00E45ED3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E0A6A2A1D351D3A00EB7013 /* ChildView */,
+				8E0A6A271D3519DE00EB7013 /* LBThemeCell.h */,
+				8E0A6A281D3519DE00EB7013 /* LBThemeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -674,18 +765,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0F76FF1D2BE67200B0A494 /* LBADViewController.xib in Resources */,
+				8E3A33EC1D37A54C00A86585 /* LBHotCommentView.xib in Resources */,
 				8E0F77091D2BEB4A00B0A494 /* LaunchImage-700-568h@2x.png in Resources */,
 				8E0F770D1D2BEB4A00B0A494 /* LaunchImage.png in Resources */,
+				8E0A6A3B1D36730400EB7013 /* LBThemePictureView.xib in Resources */,
+				8E3A33E21D37847300A86585 /* LBThemeVoiceView.xib in Resources */,
 				8EE5BF901D2FD07900C40DC1 /* LBMeViewController.storyboard in Resources */,
 				8E0F77191D2DE04000B0A494 /* LBSubTableViewCell.xib in Resources */,
 				8EA30EBC1D2E4C3700CC5E94 /* LBFriendTrendViewController.xib in Resources */,
 				8E3E4A061D27C90E004DC713 /* LaunchScreen.storyboard in Resources */,
 				8E0F770A1D2BEB4A00B0A494 /* LaunchImage-700@2x.png in Resources */,
+				8E0A6A2F1D351FD600EB7013 /* LBThemeTopView.xib in Resources */,
 				8EA30EC11D2E6E3700CC5E94 /* LBLoginRegisterView.xib in Resources */,
 				8E0CF9671D312A7E004AF092 /* LBWebViewController.xib in Resources */,
 				8E0F770C1D2BEB4A00B0A494 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8E0F77081D2BEB4A00B0A494 /* LaunchImage-568h@2x.png in Resources */,
 				8E0F770B1D2BEB4A00B0A494 /* LaunchImage-800-667h@2x.png in Resources */,
+				8E3A33E71D3796C100A86585 /* LBthemeVideoView.xib in Resources */,
 				8EA30EC91D2E922800CC5E94 /* LBFastLoginView.xib in Resources */,
 				8EE5BF951D2FD87400C40DC1 /* LBCollectionViewCell.xib in Resources */,
 				8E3E4A031D27C90E004DC713 /* Assets.xcassets in Resources */,
@@ -757,6 +853,7 @@
 				8E3E49FB1D27C90E004DC713 /* AppDelegate.m in Sources */,
 				8E0CF96C1D321089004AF092 /* LBFileManger.m in Sources */,
 				8E0F77141D2DDB4D00B0A494 /* LBSubTableViewController.m in Sources */,
+				8E0A6A321D35278F00EB7013 /* LBThemeItem.m in Sources */,
 				8E0CF9701D323035004AF092 /* LbAllViewController.m in Sources */,
 				8E8664661D28A3C900E45ED3 /* LBFriendTrendViewController.m in Sources */,
 				8E0F77111D2D3ABB00B0A494 /* LBADItem.m in Sources */,
@@ -765,23 +862,34 @@
 				8EA30ECF1D2F7B8100CC5E94 /* LBLoginTextField.m in Sources */,
 				8E0F771C1D2DEC0600B0A494 /* LBSubTagItem.m in Sources */,
 				8E8250051D2BCE1D00C3422E /* LBSettingViewController.m in Sources */,
+				8E0A6A261D35129B00EB7013 /* LbBaseMenuViewController.m in Sources */,
 				8E0F76FE1D2BE67200B0A494 /* LBADViewController.m in Sources */,
 				8E3E49F81D27C90E004DC713 /* main.m in Sources */,
+				8E0A6A291D3519DE00EB7013 /* LBThemeCell.m in Sources */,
 				8EA30EB91D2E4C1100CC5E94 /* LBLoginRegisterViewController.m in Sources */,
+				8E3A33EF1D37C1FC00A86585 /* LBCommentItem.m in Sources */,
 				8E8664751D28A67D00E45ED3 /* LBTabBarController.m in Sources */,
 				8E86648A1D2915C600E45ED3 /* UIBarButtonItem+Item.m in Sources */,
+				8E3A33EA1D37A53700A86585 /* LBHotCommentView.m in Sources */,
 				8E0CF9761D3230A6004AF092 /* LBVoiceViewController.m in Sources */,
 				8EA30ECC1D2E9A6300CC5E94 /* LBFastLoginButton.m in Sources */,
 				8EE5BF8C1D2FBD0800C40DC1 /* UITextField+placeholder.m in Sources */,
+				8E3A33DD1D3781D200A86585 /* LBBaseThemeView.m in Sources */,
 				8E0CF9731D323080004AF092 /* LBVideoViewController.m in Sources */,
 				8EA30EC41D2E6E5600CC5E94 /* LBLoginRegisterView.m in Sources */,
+				8E3A33E51D37969C00A86585 /* LBthemeVideoView.m in Sources */,
+				8E0A6A361D365BEC00EB7013 /* LBThemeViewModel.m in Sources */,
 				8E8664721D28A60900E45ED3 /* LBMeViewController.m in Sources */,
 				8EE5BF941D2FD87400C40DC1 /* LBCollectionViewCell.m in Sources */,
 				8EA30EC71D2E920C00CC5E94 /* LBFastLoginView.m in Sources */,
+				8E3A33DA1D3780CF00A86585 /* LBThemeTopView.m in Sources */,
 				8E8664841D290F6B00E45ED3 /* UIView+Frame.m in Sources */,
 				8E0CF9791D3230CB004AF092 /* LBPictureViewController.m in Sources */,
 				8E0F77181D2DE04000B0A494 /* LBSubTableViewCell.m in Sources */,
 				8E86646C1D28A55600E45ED3 /* LBNewViewController.m in Sources */,
+				8E3A33E01D37845C00A86585 /* LBThemeVoiceView.m in Sources */,
+				8E0A6A3E1D36776100EB7013 /* LBThemePictureView.m in Sources */,
+				8E3A33F21D37C3FC00A86585 /* LBUserItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

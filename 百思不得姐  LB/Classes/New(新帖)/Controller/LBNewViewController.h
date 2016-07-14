@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LBNewViewController : UIViewController
+#import "LbBaseMenuViewController.h"
+@interface LBNewViewController : LbBaseMenuViewController
 
 @end

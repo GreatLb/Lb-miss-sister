@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LBEssenceViewController : UIViewController
+#import "LbBaseMenuViewController.h"
+@interface LBEssenceViewController : LbBaseMenuViewController
 
 @end

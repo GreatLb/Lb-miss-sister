@@ -8,12 +8,22 @@
 
 #import "LBNewViewController.h"
 #import "LBSubTableViewController.h"
+#import "LBEssenceViewController.h"
+#import "LbAllViewController.h"
+#import "LBVoiceViewController.h"
+#import "LBVideoViewController.h"
+//#import "LBTextViewController.h"
+#import "LBPictureViewController.h"
 
 @implementation LBNewViewController
+
 -(void)viewDidLoad{
+    
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor blueColor];
+    [self setUpAllChildViewcontroller];  //添加所有子控制器
     [self setupNavigationBar];
+    self.view.backgroundColor =[UIColor blueColor];
+
 }
 
 -(void)setupNavigationBar{
@@ -31,4 +41,32 @@
     [self.navigationController  pushViewController:subVC animated:YES];
 }
 
+-(void)setUpAllChildViewcontroller{
+    
+    //全部
+    LbAllViewController *allVc = [[LbAllViewController  alloc]init];
+    allVc.title = @"全部";
+    [self addChildViewController:allVc];
+    
+    //视频
+    LBVideoViewController *videoVc = [[LBVideoViewController  alloc]init];
+    videoVc.title = @"视频";
+    [self addChildViewController:videoVc];
+    
+    //声音
+    LBVoiceViewController *voiceVc = [[LBVoiceViewController  alloc]init];
+    voiceVc.title = @"声音";
+    [self addChildViewController:voiceVc];
+    
+    //图片
+    LBPictureViewController *pictureVc = [[LBPictureViewController  alloc]init];
+    pictureVc.title = @"图片";
+    [self addChildViewController:pictureVc];
+    
+//    //段子
+//    LBTextViewController *textVc = [[LBTextViewController  alloc]init];
+//    textVc.title =@"段子";
+//    [self addChildViewController:textVc];
+    
+}
 @end

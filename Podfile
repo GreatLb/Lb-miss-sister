@@ -8,4 +8,5 @@ target '百思不得姐  LB' do
   pod 'SVProgressHUD', '~> 2.0.3'
   pod 'MJRefresh', '~> 3.1.9'
   pod 'NJKWebViewProgress', '~> 0.2.3'
+  pod 'DACircularProgress', '~> 2.3.1'  
   end

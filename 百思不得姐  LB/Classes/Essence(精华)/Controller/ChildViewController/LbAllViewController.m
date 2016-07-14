@@ -7,77 +7,94 @@
 //
 
 #import "LbAllViewController.h"
-static NSString *ID = @"cell";
-@interface LbAllViewController ()
+#import "LBThemeCell.h"
+#import "LBThemeItem.h"
+#import <AFNetworking.h>
+#import <MJExtension/MJExtension.h>
+#import "LBThemeViewModel.h"
 
+static NSString *ID = @"cell";
+
+#define LBURL @"http://api.budejie.com/api/api_open.php"
+
+@interface LbAllViewController ()
+@property(nonatomic, strong)NSMutableArray *themeViewMadelList;
 @end
 
 @implementation LbAllViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.tableView.contentInset = UIEdgeInsetsMake(110, 0, 49, 0);
-    self.tableView.backgroundColor = [UIColor yellowColor];
-    [self.tableView  registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+-(NSMutableArray *)themeViewMadelList{
+    if(_themeViewMadelList == nil){
+        _themeViewMadelList = [NSMutableArray array];
+    }
+    return _themeViewMadelList;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView  registerClass:[LBThemeCell class] forCellReuseIdentifier:ID];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(110, 0, 49, 0);
+    
+    self.tableView.backgroundColor = [UIColor yellowColor];
+    [self loadData];
+}
+
+
+-(void)loadData{
+    
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+//    parameters[@"type"] = @31;
+    parameters[@"type"] = @(LBThemeTypeVoice);
+    
+    [mgr GET:LBURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        // 获取字典数组
+        NSArray  *dictArray = responseObject[@"list"];
+        // 字典数组转模型数组
+        NSArray *themeList = [LBThemeItem mj_objectArrayWithKeyValuesArray:dictArray];
+       // 模型数组转视图模型数组:面向谁开发,就转换成谁
+        for (LBThemeItem *item in themeList) {
+            // 创建视图模型
+            LBThemeViewModel *vm = [[LBThemeViewModel alloc]init];
+            // 视图模型,不但保存模型,也计算好了对应cell子控件位置和cell高度
+
+            vm.item = item;
+            [self.themeViewMadelList addObject:vm];
+        }
+        
+        [self.tableView reloadData];
+        
+//      [responseObject writeToFile:@"/Users/xmg/Desktop/百思不得姐  LB/Lb-miss-sister/百思不得姐  LB/Classes/Essence(精华)/Controller/theme.plist" atomically:YES];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        
+    }];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return _themeViewMadelList.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    LBThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    cell.vm = _themeViewMadelList[indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"全部 ---%ld",indexPath.row];
     
     
+
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [_themeViewMadelList[indexPath.row] cellH];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
