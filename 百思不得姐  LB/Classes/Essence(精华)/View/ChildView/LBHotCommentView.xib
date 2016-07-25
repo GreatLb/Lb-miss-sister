@@ -12,76 +12,89 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qn-gb-cyn">
-                    <rect key="frame" x="0.0" y="0.0" width="74" height="21"/>
+                    <rect key="frame" x="0.0" y="0.0" width="68" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="hgl-mb-O1K"/>
                         <constraint firstAttribute="width" constant="74" id="wep-Gy-a04"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hgl-mb-O1K"/>
+                            <exclude reference="wep-Gy-a04"/>
+                        </mask>
+                    </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVu-Ly-FzO">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAt-lu-3pK">
                     <rect key="frame" x="0.0" y="21" width="375" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BiY-DR-yFE">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eed-JY-6fb">
                     <rect key="frame" x="0.0" y="21" width="375" height="21"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158933" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-PN-cSN">
-                            <rect key="frame" x="0.0" y="0.0" width="70" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="70" id="Q8j-bG-PA1"/>
-                            </constraints>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="158933" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCD-v4-r5Q">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6d-Jz-6hM">
-                            <rect key="frame" x="70" y="0.0" width="62" height="21"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-ET-NUL">
+                            <rect key="frame" x="60" y="0.0" width="62" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="62" id="WFt-hh-yBC"/>
+                                <constraint firstAttribute="height" constant="21" id="W5g-5P-UF8"/>
+                                <constraint firstAttribute="width" constant="62" id="hmd-V1-i2z"/>
                             </constraints>
-                            <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <inset key="imageEdgeInsets" minX="-9" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="17" image="play-voice-stop" backgroundImage="play-voice-bg">
-                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="17'" image="play-voice-stop" backgroundImage="play-voice-bg">
+                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="MTd-PN-cSN" firstAttribute="height" secondItem="BiY-DR-yFE" secondAttribute="height" id="8zh-Oe-Qbv"/>
-                        <constraint firstItem="MTd-PN-cSN" firstAttribute="leading" secondItem="BiY-DR-yFE" secondAttribute="leading" id="IYO-IF-iQs"/>
-                        <constraint firstItem="a6d-Jz-6hM" firstAttribute="leading" secondItem="MTd-PN-cSN" secondAttribute="trailing" id="Iu6-3H-XGj"/>
-                        <constraint firstItem="a6d-Jz-6hM" firstAttribute="top" secondItem="MTd-PN-cSN" secondAttribute="top" id="NZ0-oE-3gd"/>
-                        <constraint firstAttribute="height" constant="21" id="WC6-v1-S9y"/>
-                        <constraint firstItem="MTd-PN-cSN" firstAttribute="top" secondItem="BiY-DR-yFE" secondAttribute="top" id="Yck-bF-tHd"/>
-                        <constraint firstItem="a6d-Jz-6hM" firstAttribute="height" secondItem="BiY-DR-yFE" secondAttribute="height" id="qcx-Qb-JQ7"/>
+                        <constraint firstItem="GCD-v4-r5Q" firstAttribute="top" secondItem="eed-JY-6fb" secondAttribute="top" id="1ws-R6-QnZ"/>
+                        <constraint firstItem="PPE-ET-NUL" firstAttribute="leading" secondItem="GCD-v4-r5Q" secondAttribute="trailing" id="AWc-pb-r6I"/>
+                        <constraint firstItem="PPE-ET-NUL" firstAttribute="top" secondItem="eed-JY-6fb" secondAttribute="top" id="PsO-u1-GiO"/>
+                        <constraint firstItem="GCD-v4-r5Q" firstAttribute="leading" secondItem="eed-JY-6fb" secondAttribute="leading" id="VW6-5b-Cqx"/>
+                        <constraint firstItem="PPE-ET-NUL" firstAttribute="bottom" secondItem="GCD-v4-r5Q" secondAttribute="bottom" id="hHM-bI-1sS"/>
+                        <constraint firstItem="GCD-v4-r5Q" firstAttribute="height" secondItem="eed-JY-6fb" secondAttribute="height" id="knU-wp-mlx"/>
+                        <constraint firstAttribute="height" constant="21" id="rRf-r4-wm6"/>
+                        <constraint firstAttribute="bottom" secondItem="GCD-v4-r5Q" secondAttribute="bottom" id="yzE-M0-sgv"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rRf-r4-wm6"/>
+                            <exclude reference="knU-wp-mlx"/>
+                            <exclude reference="hHM-bI-1sS"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="BiY-DR-yFE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0nh-OQ-utq"/>
-                <constraint firstItem="JVu-Ly-FzO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nf0-V6-pji"/>
-                <constraint firstAttribute="trailing" secondItem="BiY-DR-yFE" secondAttribute="trailing" id="O4U-6b-Soe"/>
-                <constraint firstAttribute="trailing" secondItem="JVu-Ly-FzO" secondAttribute="trailing" id="aiu-gx-NJB"/>
-                <constraint firstItem="JVu-Ly-FzO" firstAttribute="top" secondItem="2qn-gb-cyn" secondAttribute="bottom" id="id5-s3-rFz"/>
+                <constraint firstAttribute="trailing" secondItem="jAt-lu-3pK" secondAttribute="trailing" id="Sz9-Me-qwU"/>
+                <constraint firstItem="jAt-lu-3pK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tvj-XE-XB6"/>
+                <constraint firstItem="eed-JY-6fb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bC7-1t-Jfb"/>
                 <constraint firstItem="2qn-gb-cyn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pCt-63-WRZ"/>
                 <constraint firstItem="2qn-gb-cyn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sbz-3C-bPp"/>
-                <constraint firstItem="BiY-DR-yFE" firstAttribute="top" secondItem="2qn-gb-cyn" secondAttribute="bottom" id="tRq-sA-ziK"/>
+                <constraint firstItem="eed-JY-6fb" firstAttribute="top" secondItem="2qn-gb-cyn" secondAttribute="bottom" id="tx7-dp-fBi"/>
+                <constraint firstAttribute="trailing" secondItem="eed-JY-6fb" secondAttribute="trailing" id="ubu-KJ-HNx"/>
+                <constraint firstItem="jAt-lu-3pK" firstAttribute="top" secondItem="2qn-gb-cyn" secondAttribute="bottom" id="zdi-qy-qPB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="TotalView" destination="JVu-Ly-FzO" id="0cd-X4-nP5"/>
-                <outlet property="nameView" destination="MTd-PN-cSN" id="HnM-Pm-TX5"/>
-                <outlet property="voiceButton" destination="a6d-Jz-6hM" id="H0t-E0-cbu"/>
-                <outlet property="voiceView" destination="BiY-DR-yFE" id="gfl-Fq-cYn"/>
+                <outlet property="TotalView" destination="jAt-lu-3pK" id="b2C-dR-WMs"/>
+                <outlet property="nameView" destination="GCD-v4-r5Q" id="MUD-VL-NTG"/>
+                <outlet property="voiceButton" destination="PPE-ET-NUL" id="iRB-SR-OmJ"/>
+                <outlet property="voiceView" destination="eed-JY-6fb" id="Myi-3N-Bqx"/>
             </connections>
-            <point key="canvasLocation" x="244.5" y="389"/>
+            <point key="canvasLocation" x="-41.5" y="95"/>
         </view>
     </objects>
     <resources>

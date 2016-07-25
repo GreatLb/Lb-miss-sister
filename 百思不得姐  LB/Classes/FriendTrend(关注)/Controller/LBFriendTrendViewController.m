@@ -8,6 +8,7 @@
 
 #import "LBFriendTrendViewController.h"
 #import "LBLoginRegisterViewController.h"
+#import "LBRecommendViewController.h"
 
 @implementation LBFriendTrendViewController
 -(void)viewDidLoad{
@@ -20,7 +21,9 @@
     self.navigationItem.leftBarButtonItem =[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(RecommentClick)];
     }
 -(void)RecommentClick{
-    NSLog(@"点击了关注左侧按钮");
+    LBRecommendViewController *vc = [[LBRecommendViewController alloc]init];
+    [self.navigationController  pushViewController:vc animated:YES];
+    
 }
 - (IBAction)LoginRegisterBtnClick:(UIButton *)sender {
     

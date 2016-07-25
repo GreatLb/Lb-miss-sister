@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBThemeButtonVIew">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcC-VA-fBt">
+                    <rect key="frame" x="94" y="0.0" width="94" height="40"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="mainCellCai">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhY-eY-Xv9">
+                    <rect key="frame" x="188" y="0.0" width="93" height="40"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="mainCellShare">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnL-eq-Y8l">
+                    <rect key="frame" x="281" y="0.0" width="94" height="40"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="mainCellComment">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbS-iN-5Wd">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="40"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="mainCellDing">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TcC-VA-fBt" firstAttribute="width" secondItem="xbS-iN-5Wd" secondAttribute="width" id="3Nj-Gq-kfz"/>
+                <constraint firstItem="MhY-eY-Xv9" firstAttribute="width" secondItem="xbS-iN-5Wd" secondAttribute="width" id="3qb-fb-Hee"/>
+                <constraint firstItem="VnL-eq-Y8l" firstAttribute="width" secondItem="xbS-iN-5Wd" secondAttribute="width" id="5i3-vF-HKH"/>
+                <constraint firstItem="MhY-eY-Xv9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AAc-4u-d1J"/>
+                <constraint firstItem="MhY-eY-Xv9" firstAttribute="height" secondItem="xbS-iN-5Wd" secondAttribute="height" id="CTO-HQ-Ilv"/>
+                <constraint firstAttribute="bottom" secondItem="xbS-iN-5Wd" secondAttribute="bottom" id="G7s-v2-Vc0"/>
+                <constraint firstItem="TcC-VA-fBt" firstAttribute="height" secondItem="xbS-iN-5Wd" secondAttribute="height" id="JF3-e2-eQ4"/>
+                <constraint firstItem="xbS-iN-5Wd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NAd-3T-ffj"/>
+                <constraint firstItem="TcC-VA-fBt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ReH-NC-fFX"/>
+                <constraint firstAttribute="bottom" secondItem="MhY-eY-Xv9" secondAttribute="bottom" id="YG8-J8-WxZ"/>
+                <constraint firstItem="xbS-iN-5Wd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eoG-Nr-HFt"/>
+                <constraint firstItem="MhY-eY-Xv9" firstAttribute="leading" secondItem="TcC-VA-fBt" secondAttribute="trailing" id="gbY-m0-H1Q"/>
+                <constraint firstAttribute="trailing" secondItem="VnL-eq-Y8l" secondAttribute="trailing" id="ghS-Zq-5KS"/>
+                <constraint firstItem="VnL-eq-Y8l" firstAttribute="height" secondItem="xbS-iN-5Wd" secondAttribute="height" id="l2Y-qG-CGO"/>
+                <constraint firstAttribute="bottom" secondItem="TcC-VA-fBt" secondAttribute="bottom" id="nvz-f6-Gqg"/>
+                <constraint firstItem="VnL-eq-Y8l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p5x-p0-LWJ"/>
+                <constraint firstAttribute="bottom" secondItem="VnL-eq-Y8l" secondAttribute="bottom" id="rmM-UX-BHZ"/>
+                <constraint firstItem="TcC-VA-fBt" firstAttribute="leading" secondItem="xbS-iN-5Wd" secondAttribute="trailing" id="s9r-FF-xEx"/>
+                <constraint firstItem="VnL-eq-Y8l" firstAttribute="leading" secondItem="MhY-eY-Xv9" secondAttribute="trailing" id="xgm-G4-oUd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caiView" destination="TcC-VA-fBt" id="85S-b7-zvE"/>
+                <outlet property="commentView" destination="VnL-eq-Y8l" id="jog-Nk-I6b"/>
+                <outlet property="dingView" destination="xbS-iN-5Wd" id="rzF-66-avx"/>
+                <outlet property="repostView" destination="MhY-eY-Xv9" id="mos-gy-DXF"/>
+            </connections>
+            <point key="canvasLocation" x="263.5" y="453"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+    </resources>
+</document>

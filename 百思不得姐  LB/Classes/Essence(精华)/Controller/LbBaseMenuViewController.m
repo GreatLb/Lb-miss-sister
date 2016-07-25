@@ -7,7 +7,7 @@
 //
 
 #import "LbBaseMenuViewController.h"
-
+#
 static NSString * const ID = @"cell";
 
 @interface LbBaseMenuViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -33,8 +33,10 @@ static NSString * const ID = @"cell";
 -(void)viewDidLoad{
     
     [super viewDidLoad];
+    
     [self setBottomView];
-    [self setTopView];   //添加顶部 滚动标题View
+    //添加顶部 滚动标题View
+    [self setTopView];
     //取消格外滚动区域
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
@@ -53,8 +55,8 @@ static NSString * const ID = @"cell";
     
     UIScrollView *topView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, LBScreenW, 44)];
     //    topView.backgroundColor =[UIColor blackColor];
-    topView.backgroundColor = [UIColor colorWithRed:218.0/255   green:165.0/255     blue:10.0 /255  alpha:0.6];
-    //    topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.6];
+//    topView.backgroundColor = [UIColor colorWithRed:218.0/255   green:165.0/255     blue:10.0 /255  alpha:0.6];
+    topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.6];
     
     [self.view addSubview:topView];
     _topView = topView;

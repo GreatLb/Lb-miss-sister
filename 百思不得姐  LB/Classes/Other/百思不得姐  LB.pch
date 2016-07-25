@@ -9,6 +9,8 @@
 #ifdef __OBJC__
 #import  "UIImage+Image.h"
 #import  "UIView+Frame.h"
+#import  "NSDate+LBdate.h"
+#define LBURL @"http://api.budejie.com/api/api_open.php"
 #define LBScreenH [UIScreen mainScreen].bounds.size.height
 #define LBScreenW [UIScreen mainScreen].bounds.size.width
 #define LBFunc LBLog(@"%s",__func__)

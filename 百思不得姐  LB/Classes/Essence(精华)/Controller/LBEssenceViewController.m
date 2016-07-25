@@ -12,6 +12,22 @@
 #import "LBVideoViewController.h"
 #import "LBTextViewController.h"
 #import "LBPictureViewController.h"
+/*
+ 精华界面两部分
+ 底部: UIScrollView  5个UITableView, 左右滑动
+ 顶部: UIView
+ 
+ 离屏渲染:某些界面,虽然没有显示出来,只要添加到屏幕上,就一定会渲染.
+ 渲染也会创建很多对象,这样比较耗内存.
+ 优化:没有显示到屏幕上view,最后移除屏幕,这样就不会渲染这些界面
+ UIScrollView:没有离屏渲染这样优化
+ 
+ 底部: UICollectionView  5个UITableView添加到cell, 左右滑动
+ 顶部: UIView => UIScrollView:利于扩展
+ UICollectionView:功能:离屏渲染优化,当cell离开屏幕,移除屏幕,放在缓存池,当cell要显示的时候,马上从缓存池取
+ 如何处理缓存数据错乱:当cell从缓存池中取出来的时候,马上就把之前的子控制器的view移除屏幕,添加新的子控制器view添加上去
+ 当控制器的view移除屏幕的时候,也不会销毁,被控制器强引用
+ */
 
 @interface LBEssenceViewController ()
 
@@ -22,11 +38,11 @@
 -(void)viewDidLoad{
     
     [super viewDidLoad];
-    
-    [self setUpAllChildViewcontroller];  //添加所有子控制器
-    
+    // 设置导航条内容 => 由导航控制器的栈顶控制器navigationItem决定
     [self  setupNavigationBar];
-
+    //添加所有子控制器
+    [self setUpAllChildViewcontroller];
+    
 }
 
 -(void)setUpAllChildViewcontroller{

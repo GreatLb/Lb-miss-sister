@@ -26,7 +26,7 @@ typedef enum : NSInteger {
 
 /** 照片*/
 
-@property(nonatomic,strong)NSString *cdn_img;
+//@property(nonatomic,strong)NSString *cdn_img;
 @property(nonatomic,strong)NSString *image0;
 @property(nonatomic,strong)NSString *image1;
 @property(nonatomic,strong)NSString *image2;
@@ -46,4 +46,13 @@ typedef enum : NSInteger {
 //最热评论数组
 @property(nonatomic,assign)NSArray  *top_cmt;
 @property(nonatomic,strong)LBCommentItem *hotCommentItem;
+
+/** 底部Button*/
+
+@property(nonatomic,assign)NSInteger ding;
+@property(nonatomic,assign)NSInteger cai;
+@property(nonatomic,assign)NSInteger repost;
+@property(nonatomic,assign)NSInteger comment;
+
+
 @end

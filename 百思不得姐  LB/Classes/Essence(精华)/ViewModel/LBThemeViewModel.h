@@ -18,5 +18,7 @@
 //底部热论 hotCommentViewFrame
 @property(nonatomic, assign)CGRect hotCommentViewFrame;
 
+//底部热论
+@property(nonatomic, assign)CGRect bottomViewFrame;
 @property(nonatomic, assign)CGFloat cellH;
 @end

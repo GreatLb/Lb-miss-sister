@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class LBSubTagItem;
+@class LBSubTagItem,LBUserItem;
 @interface LBSubTableViewCell : UITableViewCell
 //+(instancetype)SubTagCell;
 @property(nonatomic, strong)LBSubTagItem *item;
+@property(nonatomic, strong)LBUserItem *userItem;
 @property(nonatomic, assign)IBInspectable CGFloat imgCornerRadius;
 @end

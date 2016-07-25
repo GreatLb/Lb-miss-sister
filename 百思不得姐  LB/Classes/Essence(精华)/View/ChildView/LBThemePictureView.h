@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "LBBaseThemeView.h"
-
-@interface LBThemePictureView : LBBaseThemeView
-
+@class LBThemeItem;
+@interface LBThemePictureView : UIView
+@property (nonatomic, strong) LBThemeItem *item;
++ (instancetype)viewForXib;
 @end

@@ -9,6 +9,7 @@
 #import "LBSubTableViewCell.h"
 #import "LBSubTagItem.h"
 #import <UIImageView+WebCache.h>
+#import "LBUserItem.h"
 @interface LBSubTableViewCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
@@ -75,8 +76,58 @@
     _numLabel.text =numStr;
 }
 
+
+
+//给推荐关注右侧cell  赋值
+-(void)setUserItem:(LBUserItem *)userItem{
+    
+    _userItem = userItem;
+    
+    [_iconView sd_setImageWithURL:[NSURL URLWithString:userItem.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]options:SDWebImageLowPriority completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        if(image ==nil) return;
+        //开启图形上下文
+        // opaque:不透明度 YES:黑色 NO:透明
+        // scale:比例因子(像素与点比例) 0:自动识别当前比例因子
+        UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+        //描述裁剪区域
+        UIBezierPath *clipPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+        //设置裁剪区域
+        [clipPath  addClip];
+        //画图
+        [image  drawAtPoint:CGPointZero];//x,y都从0点开始
+        //从上下文中取出图片
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        //关闭上下文
+        UIGraphicsEndImageContext();
+        //重新赋值
+        _iconView.image = image;
+    }];
+    
+    
+    _nameLabel.text = userItem.screen_name;
+    
+    CGFloat num =[userItem.fans_count  floatValue];
+    NSString *numStr = [NSString stringWithFormat:@"%@人阅读",userItem.fans_count];
+    if(num > 10000){
+        num = num/10000;
+        numStr = [NSString  stringWithFormat:@"%.1f万人阅读",num];
+        numStr = [numStr  stringByReplacingOccurrencesOfString:@".0" withString:@""];
+    }
+    _numLabel.text =numStr;
+    
+}
 //订阅按钮点击
 - (IBAction)subButnClick:(UIButton *)sender {
+    
+    
+}
+
+
++ (instancetype)subTagCell
+{
+    // loadNibNamed:只是加载xib
+    // xib中Class,才是决定创建出哪个对象
+    return [[[NSBundle mainBundle] loadNibNamed:@"LBSubTableViewCell" owner:nil options:nil] firstObject];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

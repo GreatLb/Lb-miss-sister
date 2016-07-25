@@ -10,4 +10,10 @@
 
 @interface LBUserItem : NSObject
 @property(nonatomic, strong)NSString *username;
+
+/**  推荐关注*/
+@property(nonatomic, strong)NSString *screen_name;
+@property(nonatomic, strong)NSString *header;
+@property(nonatomic, strong)NSString *fans_count;
+/**  推荐关注*/
 @end

@@ -32,11 +32,11 @@
         CGFloat middleW =textW ;
         CGFloat middleH = 0;
         if(item.width > 0){
-            middleH = middleW / item.width * item.height;
+            middleH = textW / item.width * item.height;
         }
-        if(middleH > LBScreenH){
+        if(middleH > LBScreenH ){
             middleH = 300;
-            item.is_bigPicture =YES;
+            item.is_bigPicture = YES;
         }
         _MiddleViewFrame = CGRectMake(middleX, middleY,middleW, middleH);
         _cellH = CGRectGetMaxY(_MiddleViewFrame) + margin;
@@ -57,5 +57,13 @@
         _cellH = CGRectGetMaxY(_hotCommentViewFrame) + margin;
 
  }
+    CGFloat bottomX = 0;
+    CGFloat bottomY = _cellH;
+    CGFloat bottomW = LBScreenW;
+    CGFloat bottomH = 40;
+    _bottomViewFrame = CGRectMake(bottomX, bottomY, bottomW, bottomH);
+    _cellH = CGRectGetMaxY(_bottomViewFrame)+margin;
+    
+    
 }
 @end
