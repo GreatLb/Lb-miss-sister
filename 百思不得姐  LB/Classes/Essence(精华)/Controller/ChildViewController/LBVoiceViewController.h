@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LBVoiceViewController : UITableViewController
+#import "LBBaseThemeViewController.h"
+@interface LBVoiceViewController : LBBaseThemeViewController
 
 @end

@@ -43,6 +43,7 @@
 		8E11FDBB1D3BB1B4008EEE31 /* LBRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E11FDB91D3BB1B4008EEE31 /* LBRecommendViewController.m */; };
 		8E11FDBC1D3BB1B4008EEE31 /* LBRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E11FDBA1D3BB1B4008EEE31 /* LBRecommendViewController.xib */; };
 		8E11FDC11D3BB4CB008EEE31 /* LBCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E11FDBF1D3BB4CB008EEE31 /* LBCategoryCell.xib */; };
+		8E1CB0C01D4638FC00A5160E /* LBBaseThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CB0BF1D4638FC00A5160E /* LBBaseThemeViewController.m */; };
 		8E3A33DA1D3780CF00A86585 /* LBThemeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33D91D3780CF00A86585 /* LBThemeTopView.m */; };
 		8E3A33DD1D3781D200A86585 /* LBBaseThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33DC1D3781D200A86585 /* LBBaseThemeView.m */; };
 		8E3A33E01D37845C00A86585 /* LBThemeVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A33DF1D37845C00A86585 /* LBThemeVoiceView.m */; };
@@ -153,6 +154,8 @@
 		8E11FDB91D3BB1B4008EEE31 /* LBRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRecommendViewController.m; sourceTree = "<group>"; };
 		8E11FDBA1D3BB1B4008EEE31 /* LBRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBRecommendViewController.xib; sourceTree = "<group>"; };
 		8E11FDBF1D3BB4CB008EEE31 /* LBCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBCategoryCell.xib; sourceTree = "<group>"; };
+		8E1CB0BE1D4638FC00A5160E /* LBBaseThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBaseThemeViewController.h; sourceTree = "<group>"; };
+		8E1CB0BF1D4638FC00A5160E /* LBBaseThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBaseThemeViewController.m; sourceTree = "<group>"; };
 		8E3A33D91D3780CF00A86585 /* LBThemeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBThemeTopView.m; sourceTree = "<group>"; };
 		8E3A33DB1D3781D200A86585 /* LBBaseThemeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBaseThemeView.h; sourceTree = "<group>"; };
 		8E3A33DC1D3781D200A86585 /* LBBaseThemeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBaseThemeView.m; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 				8E0CF9781D3230CB004AF092 /* LBPictureViewController.m */,
 				8E0CF97A1D3230E0004AF092 /* LBTextViewController.h */,
 				8E0CF97B1D3230E0004AF092 /* LBTextViewController.m */,
+				8E1CB0BE1D4638FC00A5160E /* LBBaseThemeViewController.h */,
+				8E1CB0BF1D4638FC00A5160E /* LBBaseThemeViewController.m */,
 			);
 			path = ChildViewController;
 			sourceTree = "<group>";
@@ -937,6 +942,7 @@
 				8E8664631D28A37500E45ED3 /* LBEssenceViewController.m in Sources */,
 				8E0CF9621D3113D1004AF092 /* LBMeSquareItem.m in Sources */,
 				8E86648D1D2BC17800E45ED3 /* LBNavigationController.m in Sources */,
+				8E1CB0C01D4638FC00A5160E /* LBBaseThemeViewController.m in Sources */,
 				8E8664871D290F7F00E45ED3 /* UIImage+Image.m in Sources */,
 				8E0CF97C1D3230E0004AF092 /* LBTextViewController.m in Sources */,
 				8E45D27D1D3CAEB800238E8B /* LBCategoryCell.m in Sources */,

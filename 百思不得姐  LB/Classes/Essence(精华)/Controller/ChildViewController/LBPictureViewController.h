@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LBPictureViewController : UITableViewController
+#import "LBBaseThemeViewController.h"
+@interface LBPictureViewController : LBBaseThemeViewController
 
 @end
