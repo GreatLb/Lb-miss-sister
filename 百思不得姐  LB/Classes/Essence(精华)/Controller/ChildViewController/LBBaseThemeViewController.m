@@ -30,7 +30,27 @@ static NSString *ID = @"cell";
 @end
 
 @implementation LBBaseThemeViewController
-//值创建一次 ,解决上下拉刷新冲突问题
+
+//重复点击标题按钮时会来调用
+-(void)reload{
+    
+    // 在屏幕上,才需要下拉刷新
+    // 如果一个view能拿到窗口,表示这个view显示窗口上
+    
+    if (self.view.window) {
+        _headerView.alpha = 0 ;
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            self.tableView.contentOffset = CGPointMake(0, -64);
+            
+            [self loadData];
+        }];
+
+    }
+}
+
+
+//只创建一次 ,解决上下拉刷新冲突问题
 -(AFHTTPSessionManager *)mgr{
     if(_mgr == nil){
         _mgr = [AFHTTPSessionManager manager];
@@ -57,12 +77,22 @@ static NSString *ID = @"cell";
     self.tableView.backgroundColor = [UIColor lightGrayColor];
     //加载数据
     [self loadData];
-    
+//    // 监听tabBar重复点击通知
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reload) name:@"repeatClickTitle" object:nil];
+
     //添加上拉刷新
     [self setUpFootRefreshView];
     //添加下拉刷新
     [self setUpHeadRefreshView];
+    
+    //监听TabBar 重复点击通知
+    [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(reload) name:@"repeatClickTitle" object:nil];
+    }
+//销毁通知
+-(void)dealloc{
+    [[NSNotificationCenter  defaultCenter]  removeObserver:self];
 }
+
 //下拉控件
 -(void)setUpFootRefreshView{
     LBFootRefreshView *footView = [LBFootRefreshView footRefreshView];
@@ -79,7 +109,7 @@ static NSString *ID = @"cell";
     if(_offsetY == 0){
         _headerView.alpha = 0 ;
     }
-
+    
     //刷新数据
     // 上拉控件,完全显示的时候,才需要刷新数据
     // 当用户拖动的时候,判断下上拉控件什么时候完全显示
@@ -92,11 +122,11 @@ static NSString *ID = @"cell";
                  willDecelerate:(BOOL)decelerate{
     CGFloat offsetY = self.tableView.contentOffset.y;
     _offsetY = offsetY;
-    NSLog(@"偏移量 = %f",offsetY);
-        // 判断是否下拉控件完全显示
+//    NSLog(@"%f",offsetY);
+    // 判断是否下拉控件完全显示
     if (offsetY <= -( self.tableView.contentInset.top + _headerView.lb_height)){
-   
-
+        
+        
         // 当前正在刷新,就不需要刷新
         if(_headerView.isRefreshing == YES) return ;
         // 让下拉控件悬停:顶部在添加额外滚动区域
@@ -117,14 +147,20 @@ static NSString *ID = @"cell";
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     //处理上拉控件
     [self dealFootView];
-    
-   //0.2秒后显示下拉刷新
-    [UIView animateWithDuration:0.2 animations:^{
-        
+    if (self.tableView.contentOffset.y >= -64){
         _headerView.alpha
-        = 1;
-    }];
-     //处理下拉控件
+        = 0;
+        
+    }else{
+        //0.2秒后显示下拉刷新
+        [UIView animateWithDuration:0.2 animations:^{
+            
+            _headerView.alpha
+            = 1;
+        }];
+        
+    }
+    //处理下拉控件
     [self dealHeaderView];
     
 }
@@ -151,7 +187,7 @@ static NSString *ID = @"cell";
 -(void)dealHeaderView{
     //如果没有数据直接返回
     if (self.themeViewMadelList.count == 0) return;
-   
+    
     // 拖拽是的偏移量 //
     CGFloat offsetY = self.tableView.contentOffset.y; //-110
     //如果拖拽的偏移量小于等于'顶部内边距和头部视图的侯高的和' 判断头部视图的装填,处理事件
@@ -181,10 +217,13 @@ static NSString *ID = @"cell";
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
     //凭借请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    NSString *a = @"newList";
+    //判断点击了精华还是新帖的标题按钮,加载不同的数据
+    NSString *a = @"newList";  //默认加载新帖的数据
+    //如果父类是精华控制器 就修改参数,加载对应的数据
     if([self.parentViewController  isKindOfClass:[LBEssenceViewController  class]]){
         a = @"list";
     }
+
     parameters[@"a"] = a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
@@ -228,11 +267,7 @@ static NSString *ID = @"cell";
         
     }];
     
-    
-//    if(_offsetY == 0){
-//        _headerView.alpha = 0 ;
-//    }
- }
+}
 
 
 #pragma mark -加载更多数据
@@ -240,12 +275,14 @@ static NSString *ID = @"cell";
     //取消下拉请求
     // AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
     //拼接请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    
     //判断是否是新帖
     NSString *a = @"newList";
     if([self.parentViewController  isKindOfClass:[LBEssenceViewController  class]]){
-          a = @"list";
+        a = @"list";
     }
     parameters[@"a"] = a;
     parameters[@"c"] = @"data";
@@ -260,14 +297,15 @@ static NSString *ID = @"cell";
         _maxtime = [responseObject[@"info"][@"maxtime"]integerValue];
         // 获取字典数组
         NSArray  *dictArray = responseObject[@"list"];
+        
         // 字典数组转模型数组
         NSArray *themeList = [LBThemeItem mj_objectArrayWithKeyValuesArray:dictArray];
         // 模型数组转视图模型数组:面向谁开发,就转换成谁
         for (LBThemeItem *item in themeList) {
             // 创建视图模型
             LBThemeViewModel *vm = [[LBThemeViewModel alloc]init];
-            // 视图模型,不但保存模型,也计算好了对应cell子控件位置和cell高度
             
+            // 视图模型,不但保存模型,也计算好了对应cell子控件位置和cell高度
             vm.item = item;
             //添加新数据
             [self.themeViewMadelList addObject:vm];
@@ -281,6 +319,7 @@ static NSString *ID = @"cell";
         
     }];
 }
+
 //返回多少行cell
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _themeViewMadelList.count;
@@ -292,16 +331,10 @@ static NSString *ID = @"cell";
     
     LBThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     cell.vm = _themeViewMadelList[indexPath.row];
-    //    for(UIView *view in cell.subviews){
-    //        if(view){
-    //            [view removeFromSuperview];
-    //        }
-    //    }
-    //    cell.vm = _themeViewMadelList[indexPath.row];
-    
     
     return cell;
 }
+
 //cell 的行高
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     

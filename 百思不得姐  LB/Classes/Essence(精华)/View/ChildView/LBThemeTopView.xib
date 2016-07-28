@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -19,13 +20,13 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ws4-W1-CL7">
-                    <rect key="frame" x="55" y="10" width="42" height="21"/>
+                    <rect key="frame" x="55" y="10" width="42" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE2-Xp-2sB">
-                    <rect key="frame" x="55" y="24" width="42" height="21"/>
+                    <rect key="frame" x="55" y="28" width="42" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -50,7 +51,9 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ws4-W1-CL7" firstAttribute="height" secondItem="6TN-PI-ub2" secondAttribute="height" multiplier="0.5" id="0t7-Uw-5Vo"/>
                 <constraint firstItem="ws4-W1-CL7" firstAttribute="top" secondItem="6TN-PI-ub2" secondAttribute="top" id="2WD-4j-d4B"/>
+                <constraint firstItem="DE2-Xp-2sB" firstAttribute="height" secondItem="6TN-PI-ub2" secondAttribute="height" multiplier="0.5" id="5Rx-PK-ucY"/>
                 <constraint firstItem="Sui-1A-5uP" firstAttribute="top" secondItem="DE2-Xp-2sB" secondAttribute="bottom" constant="10" id="DX4-uP-M1o"/>
                 <constraint firstItem="ws4-W1-CL7" firstAttribute="leading" secondItem="6TN-PI-ub2" secondAttribute="trailing" constant="10" id="SPk-9I-l6V"/>
                 <constraint firstItem="6TN-PI-ub2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="SUY-yL-0kP"/>

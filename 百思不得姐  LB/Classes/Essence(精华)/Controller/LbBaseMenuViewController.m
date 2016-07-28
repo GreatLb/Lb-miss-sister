@@ -7,7 +7,7 @@
 //
 
 #import "LbBaseMenuViewController.h"
-#
+
 static NSString * const ID = @"cell";
 
 @interface LbBaseMenuViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -54,8 +54,8 @@ static NSString * const ID = @"cell";
 -(void)setTopView{
     
     UIScrollView *topView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, LBScreenW, 44)];
-    //    topView.backgroundColor =[UIColor blackColor];
-//    topView.backgroundColor = [UIColor colorWithRed:218.0/255   green:165.0/255     blue:10.0 /255  alpha:0.6];
+    //取消点击回到顶部
+    topView.scrollsToTop = NO;
     topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.6];
     
     [self.view addSubview:topView];
@@ -78,7 +78,8 @@ static NSString * const ID = @"cell";
     UICollectionView * collectionoView =({
         collectionoView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, LBScreenW, LBScreenH) collectionViewLayout:layout];
         collectionoView.backgroundColor = [UIColor greenColor];
-        
+        //取消点击回到顶部
+        collectionoView.scrollsToTop = NO;
         _bottomView = collectionoView;
         collectionoView.dataSource =self;
         collectionoView.delegate =self;
@@ -153,10 +154,17 @@ static NSString * const ID = @"cell";
         _underLineView.lb_centerX = button.lb_centerX;
     }];
 }
-//点击按钮时  切换视图
+//点击标题按钮时  切换视图
 -(void)btnClick:(UIButton *)button{
     
     NSInteger i = button.tag;
+    
+    //判断下是否重复点击标题按钮  (重复点击实现刷新)
+    if(_selectButton ==  button){
+        UIViewController *vc = self.childViewControllers[i];
+        //远行时  调用寻找调用reload  方法
+        [vc performSelector:@selector(reload)];    }
+    
     [self setSelectButton:button];
     CGFloat  offsetX = i * LBScreenW;
     _bottomView.contentOffset = CGPointMake(offsetX, 0);

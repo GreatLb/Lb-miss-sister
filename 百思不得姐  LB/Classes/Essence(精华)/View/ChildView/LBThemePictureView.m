@@ -47,10 +47,29 @@
    
     _item = item;
    
+    _progressView.progress = 0;
+    _progressView.progressLabel.text = @"0%";
+    if(item.is_gif){
+    [_pictureVIew sd_setImageWithURL:[NSURL URLWithString:item.image1] placeholderImage:nil options:SDWebImageLowPriority | SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        
+        CGFloat progress = 1.0 * receivedSize / expectedSize;
+        
+        if (progress  > 0) {
+            _progressView.progress = progress;
+            _progressView.progressLabel.text = [NSString stringWithFormat:@"%.1f%%",progress * 100];
+        }
+        
+    } completed:nil];
+        
+} else {
     UIImage *image = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:item.image0];
-  
+    if(image){
+        // 已经下载OK,并且已经拉伸好
+        _pictureVIew.image = image;
+    }else{   // 没有下载过图片
     //下载图片
     [_pictureVIew sd_setImageWithURL:[NSURL URLWithString:item.image0] placeholderImage:image options:SDWebImageLowPriority | SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+       
         CGFloat progress = 1.0 * receivedSize / expectedSize;
         
         if (progress  > 0) {
@@ -58,21 +77,28 @@
             _progressView.progressLabel.text = [NSString stringWithFormat:@"%.1f%%",progress * 100];
         }
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
+        if (cacheType != SDImageCacheTypeNone) return ;
+         // 不做任何处理
         if(!item.is_bigPicture) return;
+        
         CGFloat pictureW = LBScreenW - 20;
         CGFloat pictureH = pictureW / item .width *item.height;
         CGRect frame = CGRectMake(0, 0, pictureW, pictureH);
+        //开启图形上下文
         UIGraphicsBeginImageContextWithOptions(frame.size,NO, 0);
+        //绘制
         [image drawInRect:frame];
-        image = UIGraphicsGetImageFromCurrentImageContext();
+        //获取图片
+        image =UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
-        
+        //关闭上下文
+        UIGraphicsEndImageContext();
+         //存储图片
         [[SDImageCache sharedImageCache] storeImage:image forKey:item.image0];
         _pictureVIew.image =image;
     }] ;
-    
-//    }
+  }
+}
     _gifImageView.hidden = !item.is_gif;
     //大图
     _seeBigPictureView.hidden = !item.is_bigPicture;
@@ -87,8 +113,6 @@
     }
     
 }
-//- (IBAction)seeBigPicture:(id)sender {
-//    
-//   
-//}
+
 @end
+

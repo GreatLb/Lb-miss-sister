@@ -15,8 +15,9 @@
 #import "LBNavigationController.h"
 //#import "UIImage+Image.h"
 #import <MJExtension.h>
-@interface LBTabBarController ()
+@interface LBTabBarController ()<UITabBarControllerDelegate>
 @property(nonatomic, weak)UIButton *plusButton;
+@property(nonatomic,weak)UIViewController *lastVC;
 @end
 @implementation LBTabBarController
 
@@ -53,8 +54,24 @@
     [self setupAlltitleButton];
     
     self.plusButton.center =CGPointMake(self.tabBar.bounds.size.width *0.5, self.tabBar.lb_height *0.5);
+    
+    self.delegate = self;
+    //默认第 0 个子控件为最后一个控件
+    _lastVC = self.childViewControllers[0];
+    
 }
 
+
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    //判断是否重复点击
+    if(_lastVC == viewController){
+//        NSLog(@"重复点击");
+        // 通知控制器,刷新表格
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"repeatClickTitle" object:nil];
+    }
+    //判断是否重复点击了按钮
+    _lastVC = viewController;
+}
 -(void)setupAlltitleButton{
     //0
     UIViewController  *vc = self.childViewControllers[0];

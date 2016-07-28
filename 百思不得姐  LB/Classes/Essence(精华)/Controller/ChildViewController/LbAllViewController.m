@@ -12,6 +12,7 @@
 #import <AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 #import "LBThemeViewModel.h"
+#import "LBEssenceViewController.h"
 
 #import <MJRefresh/MJRefresh.h>
 
@@ -24,6 +25,15 @@ static NSString *ID = @"cell";
 
 @implementation LbAllViewController
 
+//重复点击标题按钮时会来调用
+-(void)reload{
+    if(self.view.window){
+    //刷新数据
+        [self.tableView.mj_header beginRefreshing];
+    
+    //[self loadData];
+   }
+}
 
 
 //值创建一次 ,解决上下拉刷新冲突问题
@@ -69,10 +79,14 @@ static NSString *ID = @"cell";
     footView.automaticallyHidden = YES;
     self.tableView.mj_footer = footView;
     
-    
+    //接收通知,监听标题按钮重复点击
+    [[NSNotificationCenter  defaultCenter] addObserver:self selector:@selector(reload) name:@"repeatClickTitle" object:nil];
 }
 
-
+//销毁通知对象
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 -(void)loadData{
     
     //AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
@@ -80,8 +94,12 @@ static NSString *ID = @"cell";
     [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
     //凭借请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    NSString *a = @"newList";
+    if([self.parentViewController  isKindOfClass:[LBEssenceViewController class]]){
+        a = @"list" ;
+    }
     
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(LBThemeTypeAll);
     //发送请求
@@ -176,12 +194,6 @@ static NSString *ID = @"cell";
     
     LBThemeCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     cell.vm = _themeViewMadelList[indexPath.row];
-    //    for(UIView *view in cell.subviews){
-    //        if(view){
-    //            [view removeFromSuperview];
-    //        }
-    //    }
-    //    cell.vm = _themeViewMadelList[indexPath.row];
     
     
     return cell;
